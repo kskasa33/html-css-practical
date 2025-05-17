@@ -1,0 +1,278 @@
+/* PC、スマホ共通スタイル */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:"Noto Sans Japanese";
+  margin: 0;
+}
+
+/* ========================
+PC用のスタイル
+======================== */
+@media screen and (min-width:768px){
+  body{
+    max-width: 1080px;
+    min-width:960px;
+    margin: 0 auto;
+  }
+
+  /* ヘッダー */
+  header{
+    width: 100%;
+    margin: 33px auto;
+  }
+
+  header>div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header>div>h1{
+    font-size: 34px;
+    border: 1px solid black;
+  }
+
+  #nav-pc{
+    width: 224px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #nav-pc>a{
+    font-size: 34px;
+    font-weight: bold;
+    color:#000000;
+    text-decoration: none;
+  }
+
+    #nav-pc>a:hover{
+    color:#000000;
+    text-decoration: underline;
+  }
+
+  /* メインビジュアル */
+  .mv {
+  width: 100vw;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 25px 0 0 0;
+}
+
+/*   Aboutセクション */
+  .about{
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    margin-top: 72px;
+    margin-bottom: 87px;
+  }
+
+  #about{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 73px;
+  }
+
+  .about-box{
+    display: flex;
+    justify-content: center;
+  }
+
+  .intorduction{
+    margin-left: 121px;
+  }
+
+  .intorduction>p{
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  li{
+    font-size: 18px;
+  }
+
+  /*   Worksセクション */
+  .works{
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  #works{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom:45px ;
+  }
+
+  .works-contents{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .works-contents>div{
+    width: 30%;
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+
+  .works-contents>div>p{
+    flex-wrap: wrap;
+    font-size: 18px;
+  }
+
+  /*   footerセクション */
+  footer{
+    width: 100%;
+  }
+
+  footer>p{
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+/* ========================
+スマートフォン用のスタイル
+======================== */
+@media screen and (max-width:767px){
+  body{
+    min-width: 375px;
+    margin: 0 auto;
+    padding-right: 13px;
+  }
+
+    /* ヘッダー */
+  header{
+    width: 100%;
+    margin: 33px auto;
+  }
+
+  header>div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header>div>h1{
+    font-size: 28px;
+    border: 1px solid black;
+    margin-left: 16px;
+  }
+
+  #nav-pc{
+    width: 146px;
+    display: flex;
+    justify-content: space-between;
+    margin-right:13px ;
+  }
+
+  #nav-pc>a{
+    font-size: 21px;
+    font-weight: bold;
+    color:#000000;
+    text-decoration: none;
+  }
+
+    #nav-pc>a:hover{
+    color:#000000;
+    text-decoration: underline;
+  }
+
+  /* メインビジュアル */
+.mv {
+  width: 100%;
+  display: block;
+  position: static;
+  transform: none;
+  }
+
+  /*   Aboutセクション */
+  .about{
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    margin-top: 33px;
+    margin-bottom: 60px;
+  }
+
+  #about{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .about-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-img{
+    width: 280px;
+    height:280px;
+  }
+
+  .intorduction{
+    margin:0 auto 0 39px;
+  }
+
+  .intorduction>p{
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  li{
+    font-size: 18px;
+  }
+
+  /*   Worksセクション */
+  .works{
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+  }
+
+  #works{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom:21px ;
+  }
+
+  .works-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .works-contents>div{
+    width: auto;
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-bottom:44px ;
+  }
+
+  .works-contents>div>p{
+    flex-wrap: wrap;
+    font-size: 18px;
+  }
+
+  /*   footerセクション */
+  footer{
+    width: 100%;
+  }
+
+  footer>p{
+    text-align: center;
+    font-size: 18px;
+  }
+}
