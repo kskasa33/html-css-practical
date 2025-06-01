@@ -109,6 +109,7 @@ img {
   justify-content: center;
   margin: 0 auto;
   max-width: 960px;
+  list-style: none;
 }
 
 /* Worksの画像と説明部分 */
